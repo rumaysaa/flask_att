@@ -4,4 +4,4 @@ passlib==1.7.4
 pymongo==4.6.1
 Requests==2.31.0
 face_recognition
-python-opencv
+opencv-python
