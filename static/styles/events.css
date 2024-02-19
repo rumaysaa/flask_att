@@ -1,0 +1,59 @@
+
+
+#calendar {
+    max-width: 850px;
+    height: 100%;
+    margin: 80px auto;
+    background: #fff;
+    padding: 15px;
+}
+a {
+    text-decoration: none
+}
+
+
+.fc-event {
+    border: 1px solid #eee !important;
+}
+
+.fc-content {
+    padding: 3px !important;
+}
+a {
+    text-decoration: none
+}
+.fc-content .fc-title {
+    display: block !important;
+    overflow: hidden;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.fc-customButton-button {
+    font-size: 13px !important;
+    position: absolute;
+    top:  0px;
+    left: 50%;
+    transform: translateY(-50%);
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group>label {
+    margin-bottom: 10px;
+}
+
+#delete-modal .modal-footer > .btn {
+    border-radius: 3px !important;
+    padding: 0px 8px !important;
+ }
+
+.fc-scroller {
+    overflow-y: hidden !important;
+}
+
+
