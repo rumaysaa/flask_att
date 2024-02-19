@@ -1,0 +1,24 @@
+<link rel="stylesheet" href="../static/styles/notifications.css">
+<div class="notification-list">
+    {%if notis != []%}
+    {% for data in notis%}
+    <div class="notification">
+        <div class="sender-info">
+            <div class="sender-avatar">A</div>
+            <div class="sender-name">Admin</div>
+        </div>
+        <div class="notification-content">{{data['notification']}}</div>
+        <div class="notification-time">{{data['dateTime']}}</div>
+    </div>
+    {%endfor%}
+    {% else %}
+    <div class="row">
+        <div class="col-lg-5"></div>
+        <div class="col-lg-4">
+            <span style="color: rgb(171, 171, 171); text-align: center; align-items: center; align-content: center;">No
+                Notifications </span>
+        </div>
+        <div class="col-lg-1"></div>
+    </div>
+    {%endif%}
+</div>
