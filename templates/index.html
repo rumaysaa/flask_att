@@ -30,18 +30,35 @@
                 <div class="nav_list">
                     <a id="dash" href="/" class="nav_link"> <i class='bx bx-grid-alt nav_icon'></i>
                         <span class="nav_name">Dashboard</span> </a>
-                    <a id="events" href="/events" class="nav_link"> <i class='bx bxs-calendar-event nav_icon'></i> <span
-                            class="nav_name">Events
-                            {% if no_event != 0%}<span class="badge-noti">{{no_event}}</span> {%endif%}</span> </a>
-                    <a id="noti" href="/notifications" class="nav_link"> <i class='bx bxs-bell nav_icon'></i> <span
-                            class="nav_name">Notifications
-                            {% if no_noti != 0%}<span class="badge-noti">{{no_noti}}</span>{%endif%}</span>  </a>
-                    <!--<a id="stats" href="#" class="nav_link "> <i class='bx bx-bar-chart-alt-2 nav_icon'></i> <span
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <a id="events" href="/events" class="nav_link"> <i
+                                    class='bx bxs-calendar-event nav_icon'></i> <span class="nav_name">Events</span>
+                            </a>
+                        </div>
+                        <div class="col-sm-4 nav_link">
+                            {% if no_event != 0%}<span class="badge-noti">{{no_event}}</span> {%endif%}
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <a id="noti" href="/notifications" class="nav_link"> <i class='bx bxs-bell nav_icon'></i>
+                                <span class="nav_name">Notifications</span> </a>
+                        </div>
+                        <div class="col-sm-4 nav_link">
+                            {% if no_noti != 0%}<span class="badge-noti">{{no_noti}}</span>{%endif%}</div>
+                        <!--<a id="stats" href="#" class="nav_link "> <i class='bx bx-bar-chart-alt-2 nav_icon'></i> <span
                             class="nav_name">Stats</span></a>-->
-                    <a id="holiday" href="/holidays" class="nav_link">
-                        <i class='bx bx-coffee nav_icon'></i> <span class="nav_name">Holidays
-                           {% if no_holi != 0%} <span class="badge-noti">{{no_holi}}</span> {%endif%}
-                        </span></a>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <a id="holiday" href="/holidays" class="nav_link">
+                                <i class='bx bx-coffee nav_icon'></i> <span class="nav_name">Holidays</span></a>
+                        </div>
+                        <div class="col-sm-4 nav_link">
+                            {% if no_holi != 0%} <span class="badge-noti">{{no_holi}}</span> {%endif%}
+                        </div>
+                    </div>
                     <a id="acc" href="/account" class="nav_link">
                         <div class="header_img"><i class="bx nav_icon">
                                 <img src="../static/images/{{acc_data['avatarID']}}.jpg" class="img_logo" alt="user">
